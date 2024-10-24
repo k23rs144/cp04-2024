@@ -66,6 +66,13 @@
         font-size: 20px;
         position:absolute; top:380px; left:53%; width:20%; height:60px; 
     }
+
+    #btnd {
+        background-color: pink;
+        color: black;
+        font-size: 20px;
+        position:absolute; top:380px; left:73%; width:20%; height:60px; 
+    }
     
     #minute {
         font-size: 30px;
