@@ -38,6 +38,10 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+         $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
         init();
     });
     
@@ -177,9 +181,21 @@
         var audio  = new Audio();
         audio.src = "pin.wav";
         audio.play();
-        };
+        };    
+    }
+
+     function alarm2(){
+        var canvas = $("#mycanvas")[0];
+        var ctx = canvas.getContext("2d");
+        var img = new Image();
+        img.src = "tokei.png";
+        img.onload = function(){
+            ctx.drawImage(img,0,0,200,200);
         
-        
+        var audio  = new Audio();
+        audio.src = "pin.wav";
+        audio.play();
+        };    
     }
     
     // ButtonAがクリックされた時の処理
@@ -207,7 +223,9 @@
     }
     
     function btnDClick(e){
-        
+        active = false;
+        alarm2();
+       
     }
  
     // 繰り返し実行する処理
